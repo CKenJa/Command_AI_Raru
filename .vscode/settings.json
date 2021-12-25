@@ -1,0 +1,137 @@
+{
+    "datapack.env.cmdVersion": "1.17",
+    "datapack.env.dataVersion": "1.17",
+    "datapack.env.jsonVersion": "1.17",
+
+    "datapack.env.permissionLevel": 2,
+    "datapack.env.dependsOnVanilla": true,
+    "datapack.env.defaultVisibility": "public",
+    "datapack.env.detectionDepth": 1,
+    "datapack.env.exclude": [],
+    "datapack.env.include": [],
+    "datapack.env.language": "Default",
+    "datapack.env.dataSource": "GitHub",
+
+
+    "datapack.features.formatting": true,
+
+    "datapack.lint.nbtByteSuffix": "b",
+    "datapack.lint.nbtLongSuffix": "L",
+    "datapack.lint.nbtShortSuffix": "s",
+    "datapack.lint.nbtFloatSuffix": "f",
+    "datapack.lint.nbtDoubleSuffix": "d",
+
+    "datapack.lint.nbtDoubleOmitSuffix": false,
+    "datapack.lint.timeOmitTickUnit": false,
+
+    "datapack.lint.eol": "LF",
+
+    "datapack.lint.selectorSortKeys": [
+        "warning",
+        [
+            "type",
+            "gamemode",
+            "gamemodeNeg",
+            "level",
+            "team",
+            "teamNeg",
+            "typeNeg",
+            "tag",
+            "tagNeg",
+            "name",
+            "nameNeg",
+            "predicate",
+            "predicateNeg",
+            "scores",
+            "advancements",
+            "nbt",
+            "nbtNeg",
+            "x",
+            "y",
+            "z",
+            "dx",
+            "dy",
+            "dz",
+            "distance",
+            "x_rotation",
+            "y_rotation",
+            "sort",
+            "limit"
+        ]
+    ],
+
+
+    "mcdutil.createDatapackTemplate.defaultFolder": true,
+    "mcdutil.createDatapackTemplate.defaultLoadAndTick": true,
+    "mcdutil.createDatapackTemplate.defaultVanillaData": true,
+    "mcdutil.createFile.fileTemplate": {
+        "function": [
+            "#> %fileResourcePath%",
+            "#",
+            "#%cursor%",
+            "#",
+            "# @within %nowOpenFileType% %nowOpenFileResourcePath%"
+        ],
+        "advancement": [
+            "{",
+            "    \"criteria\": {",
+            "        \"trigger\": {",
+            "            \"trigger\": %cursor%",
+            "        }",
+            "    }",
+            "}",
+            ""
+        ],
+        "predicate": [
+            "{",
+            "    \"condition\": %cursor%",
+            "}",
+            ""
+        ],
+        "tag/block": [
+            "{",
+            "    \"replace\": false,",
+            "    \"values\": [",
+            "        %cursor%",
+            "    ]",
+            "}",
+            ""
+        ],
+        "tag/entity_type": [
+            "{",
+            "    \"replace\": false,",
+            "    \"values\": [",
+            "        %cursor%",
+            "    ]",
+            "}",
+            ""
+        ],
+        "tag/fluid": [
+            "{",
+            "    \"replace\": false,",
+            "    \"values\": [",
+            "        %cursor%",
+            "    ]",
+            "}",
+            ""
+        ],
+        "tag/function": [
+            "{",
+            "    \"replace\": false,",
+            "    \"values\": [",
+            "        %cursor%",
+            "    ]",
+            "}",
+            ""
+        ],
+        "tag/item": [
+            "{",
+            "    \"replace\": false,",
+            "    \"values\": [",
+            "        %cursor%",
+            "    ]",
+            "}",
+            ""
+        ]
+    }
+}
