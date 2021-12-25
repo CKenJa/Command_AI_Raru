@@ -1,0 +1,2 @@
+execute store result storage ckenja.ai_raru.base_conv:main temp int 1 run scoreboard players get current= ckenja.ai_raru.base_conv.num
+data modify storage ckenja.ai_raru.base_conv:main out prepend from storage ckenja.ai_raru.base_conv:main temp
