@@ -3,13 +3,13 @@
 # 単純にモデルを実行する
 # 1tickで全処理が終わらないとバグる
 #
-#@input
+# @input
 #   storage ckenja.ai_raru:calc input.model
 #       重みとかデータぶち込んだモデル
 #   storage ckenja.ai_raru:calc input.matrix
 #       タスクのデータ
 #
-#@output storage ckenja.ai_raru:calc output.matrix
+# @output storage ckenja.ai_raru:calc output.matrix
 #
 # @public
 
