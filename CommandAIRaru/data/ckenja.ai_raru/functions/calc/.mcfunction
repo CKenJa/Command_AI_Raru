@@ -1,7 +1,7 @@
 #> ckenja.ai_raru:calc/
 #
-#重みとかを使ってタスクをこなすよ
-#とりあえず1tickで終わらせられる前提だよ
+# 単純にモデルを実行する
+# 1tickで全処理が終わらないとバグる
 #
 #@input
 #   storage ckenja.ai_raru:calc input.model
