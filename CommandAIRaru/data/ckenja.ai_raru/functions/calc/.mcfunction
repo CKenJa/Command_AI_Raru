@@ -11,7 +11,7 @@
 #
 #@output storage ckenja.ai_raru:calc output.matrix
 #
-#@public
+# @public
 
 scoreboard players set #test ckenja.ai_raru 0
 

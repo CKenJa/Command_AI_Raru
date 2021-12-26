@@ -2,7 +2,7 @@
 #
 # モデルを学習させるよ
 #
-#@input
+# @input
 #   storage ckenja.ai_raru:learn input.model
 #       モデル
 #   storage ckenja.ai_raru:learn input.training
@@ -12,7 +12,7 @@
 #   storage ckenja.ai_raru:learn input.test
 #       テストデータセット
 #
-#@output
+# @output
 #   storage ckenja.ai_raru:learn output.model
 #   storage ckenja.ai_raru:learn output.log[-1]
 #
