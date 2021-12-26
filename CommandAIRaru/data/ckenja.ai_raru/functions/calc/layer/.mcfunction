@@ -4,6 +4,7 @@
 #
 # @within function ckenja.ai_raru:calc/module/
 
+data modify storage ckenja.ai_raru.__temp__:calc matrix.matrix set from storage ckenja.ai_raru.__temp__:calc output.matrix
 function ckenja.ai_raru:calc/node/
 
 data remove storage ckenja.ai_raru.__temp__:calc model.module[-1].layer[-1]
