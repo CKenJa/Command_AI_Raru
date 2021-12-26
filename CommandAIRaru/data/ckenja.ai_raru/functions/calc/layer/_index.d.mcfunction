@@ -5,11 +5,7 @@
 # @private
 
 #> storage
-#@within *
-#   ckenja.ai_raru:calc/layer/*
-    #declare ckenja.ai_raru__temp__:calc
-
-#> score_holder
-#@within *
-#   ckenja.ai_raru:calc/layer/*
-    #declare #i
+#@within function
+#   ckenja.ai_raru:calc/layer/**
+#   ckenja.ai_raru:calc/node/**
+    #declare storage ckenja.ai_raru.__temp__:calc/layer

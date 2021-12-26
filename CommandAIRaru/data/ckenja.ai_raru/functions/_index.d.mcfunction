@@ -6,4 +6,4 @@
 
 #> objective
 #@public
-    #declare ckenja.ai_raru
+    #declare objective ckenja.ai_raru
