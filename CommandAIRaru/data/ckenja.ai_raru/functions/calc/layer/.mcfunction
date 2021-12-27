@@ -13,4 +13,4 @@ data remove storage ckenja.ai_raru.__temp__:calc model.module[-1].layer[-1]
 #execute if score #calc.layer.number ckenja.ai_raru matches 1.. run function ckenja.ai_raru:calc/layer/
 execute if data storage ckenja.ai_raru.__temp__:calc model.module[-1].layer[{}] run function ckenja.ai_raru:calc/layer/
 
-#say layer
+say layer

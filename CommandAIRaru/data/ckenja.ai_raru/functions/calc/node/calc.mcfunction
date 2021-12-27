@@ -27,4 +27,4 @@ execute unless data storage ckenja.ai_raru.arr_math:main out{result:2} run data 
 #ここはappendでもinisertでも統一されていれば問題ない
 data modify storage ckenja.ai_raru.__temp__:calc/layer output append from storage ckenja.ai_raru.__temp__:calc/matrix output
 
-#say node/calc
+say node/calc

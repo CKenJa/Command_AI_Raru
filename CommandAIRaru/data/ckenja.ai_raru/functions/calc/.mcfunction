@@ -22,4 +22,4 @@ data modify storage ckenja.ai_raru.__temp__:calc model set from storage ckenja.a
 function ckenja.ai_raru:calc/module/
 data modify storage ckenja.ai_raru:calc output.matrix set from storage ckenja.ai_raru.__temp__:calc/layer input
 
-#say calc
+say calc
