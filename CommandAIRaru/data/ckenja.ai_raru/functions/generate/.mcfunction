@@ -8,6 +8,7 @@
 #       #generate.layer ckenja_ai_raru
 #       #generate.node ckenja.ai_raru
 #       #generate.input ckenja.ai_raru
+#           inputされる行列のサイズ
 #   storage
 #       ckenja.ai_raru:generate input.model
 #           モジュールの設定とかあらかじめしておいた空っぽのモデルを入れてね
@@ -22,4 +23,4 @@
 
 #重みの数は、前ノードの数で決める。最初の重みの数は#generate.inputより
 
-#Heの初期値は-√2~√2の範囲になる
+#Heの初期値は確率変数Zに従う標準正規分布を用意してX=√(2/n)Zで確率変数Zに従う分散が2/nの正規分布が得られる
