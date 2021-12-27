@@ -4,3 +4,5 @@
 # 使用ライブラリなど
 - minecraft floating point arithmetic
 https://github.com/gibbsly/mc-floating-point-arithmetic
+- AiMath(by 赤石愛)
+https://github.com/Ai-Akaishi/AiMath
