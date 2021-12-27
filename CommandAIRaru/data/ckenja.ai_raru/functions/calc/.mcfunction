@@ -13,6 +13,8 @@
 #
 # @public
 
+#say calc
+
 scoreboard players set #test ckenja.ai_raru 0
 
 function ckenja.ai_raru.arr_math:reset
@@ -21,5 +23,3 @@ data modify storage ckenja.ai_raru.__temp__:calc model set from storage ckenja.a
 
 function ckenja.ai_raru:calc/module/
 data modify storage ckenja.ai_raru:calc output.matrix set from storage ckenja.ai_raru.__temp__:calc/layer input
-
-say calc
