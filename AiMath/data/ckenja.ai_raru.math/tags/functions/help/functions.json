@@ -1,0 +1,11 @@
+{
+	"replace": false,
+	"values": [
+		"ckenja.ai_raru.math:help/sin",
+		"ckenja.ai_raru.math:help/cos",
+		"ckenja.ai_raru.math:help/tan",
+		"ckenja.ai_raru.math:help/sqrt",
+		"ckenja.ai_raru.math:help/random",
+		"ckenja.ai_raru.math:help/dice"
+	]
+}
