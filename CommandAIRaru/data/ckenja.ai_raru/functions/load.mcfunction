@@ -6,3 +6,4 @@
 
 scoreboard objectives add ckenja.ai_raru dummy
 function ckenja.ai_raru.arr_math:setup
+scoreboard players set #3072 ckenja.ai_raru 3072

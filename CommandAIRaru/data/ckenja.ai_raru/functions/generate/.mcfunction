@@ -27,5 +27,3 @@ function ckenja.ai_raru:generate/module/
 
 
 #重みの数は、前ノードの数で決める。最初の重みの数は#generate.inputより
-
-#Heの初期値は確率変数Zに従う標準正規分布を用意してX=√(2/n)Zで確率変数Zに従う分散が2/nの正規分布が得られる
