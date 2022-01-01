@@ -21,3 +21,5 @@ data modify storage ckenja.ai_raru:lib expf.output set value {dec:0,num:[1],pol:
 function ckenja.ai_raru:lib/expf/loop
 
 execute if data storage ckenja.ai_raru:lib expf{negative:true} run function ckenja.ai_raru:lib/expf/reciprocal
+
+scoreboard players set #lib.expf.i ckenja.ai_raru 4
