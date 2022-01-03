@@ -23,10 +23,7 @@ data modify storage ckenja.ai_raru.__temp__:calc/node output set from storage ck
 #tellraw @a {"nbt":"output","storage":"ckenja.ai_raru.__temp__:calc/node"}
 
 #んで活性化関数の適用。ここでは単純なReLU
-data modify storage ckenja.ai_raru.arr_math:in var1 set value {dec:0,num:[0],pol:1,base:10}
-data modify storage ckenja.ai_raru.arr_math:in var2 set from storage ckenja.ai_raru.__temp__:calc/node output
-function ckenja.ai_raru.arr_math:call/compare
-execute unless data storage ckenja.ai_raru.arr_math:main out{result:2} run data modify storage ckenja.ai_raru.__temp__:calc/node output set value {dec:0,num:[0],pol:1,base:10}
+execute unless data storage ckenja.ai_raru.__temp__:calc/node output{pol:-1} run data modify storage ckenja.ai_raru.__temp__:calc/node output set value {dec:0,num:[0],pol:1,base:10}
 #say relu
 #tellraw @a {"nbt":"output","storage":"ckenja.ai_raru.__temp__:calc/node"}
 

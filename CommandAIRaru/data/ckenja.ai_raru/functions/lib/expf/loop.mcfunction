@@ -23,7 +23,4 @@ data modify storage ckenja.ai_raru.arr_math:in var2 set from storage ckenja.ai_r
 function ckenja.ai_raru.arr_math:call/add
 data modify storage ckenja.ai_raru:lib expf.n set from storage ckenja.ai_raru.arr_math:main out
 
-data modify storage ckenja.ai_raru.arr_math:in var1 set value {dec:4,num:[0,0,0,0,1],pol:1,base:10}
-data modify storage ckenja.ai_raru.arr_math:in var2 set from storage ckenja.ai_raru:lib expf.d
-function ckenja.ai_raru.arr_math:call/compare
 execute if data storage ckenja.ai_raru.arr_math:main out{result:2} run function ckenja.ai_raru:lib/expf/loop

@@ -7,3 +7,4 @@
 #> storage
 # @public
 #declare storage ckenja.ai_raru:lib
+#declare storage ckenja.ai_raru.__temp__:lib
