@@ -6,7 +6,7 @@
 #
 # @public
 
-data modify storage ckenja.ai_raru.math: in set value [6,1024]
+data modify storage ckenja.ai_raru.math: in set value [8,16]
 function #ckenja.ai_raru.math:dice
 execute store result score in= ckenja.ai_raru.arr_math.main run data get storage ckenja.ai_raru.math: out.sum
 scoreboard players operation in= ckenja.ai_raru.arr_math.main -= #3072 ckenja.ai_raru
