@@ -2,49 +2,31 @@
 #
 # 自然指数関数
 #
-# @input storage ckenja.ai_raru:lib  expf.input
+# @input score #lib.expf.input ckenja.ai_raru
 #
-# @output storage ckenja.ai_raru:lib  expf.output
+# @output score #lib.expf.output ckenja.ai_raru
 #
 # @public
 
+#1+x+x^2/2+x^3/6
+
 #負ならいったん正に
-execute if data storage ckenja.ai_raru:lib expf.input{pol:-1} run data modify storage ckenja.ai_raru:lib expf.input.pol set value 1
+execute store success score #lib.expf.success ckenja.ai_raru run execute unless score #lib.expf.input ckenja.ai_raru matches 0.. run scoreboard players operation #lib.expf.input ckenja.ai_raru *= #-1 ckenja.ai_raru
 
 # テイラー展開(3次)
-    #powもいつか最適化したいよね
-    data modify storage ckenja.ai_raru.arr_math:in var1 set from storage ckenja.ai_raru:lib expf.input
-    data modify storage ckenja.ai_raru.arr_math:in var2 set from storage ckenja.ai_raru:lib expf.input
-    function ckenja.ai_raru.arr_math:call/multiply
-    data modify storage ckenja.ai_raru.__temp__:lib expf.2 set from storage ckenja.ai_raru.arr_math:main out
+    scoreboard players operation #lib.expf.2 ckenja.ai_raru = #lib.expf.input ckenja.ai_raru
+    scoreboard players operation #lib.expf.2 ckenja.ai_raru *= #lib.expf.input ckenja.ai_raru
 
-    data modify storage ckenja.ai_raru.arr_math:in var1 set from storage ckenja.ai_raru.__temp__:lib expf.2
-    data modify storage ckenja.ai_raru.arr_math:in var2 set from storage ckenja.ai_raru:lib expf.input
-    function ckenja.ai_raru.arr_math:call/multiply
+    scoreboard players operation #lib.expf.3 ckenja.ai_raru = #lib.expf.input ckenja.ai_raru
+    scoreboard players operation #lib.expf.3 ckenja.ai_raru *= #lib.expf.2 ckenja.ai_raru
 
-    data modify storage ckenja.ai_raru.arr_math:in var1 set from storage ckenja.ai_raru.arr_math:main out
-    data modify storage ckenja.ai_raru.arr_math:in var2 set value {dec:0,num:[6],pol:1,base:10}
-    function ckenja.ai_raru.arr_math:call/divide
-    data modify storage ckenja.ai_raru.__temp__:lib expf.3 set from storage ckenja.ai_raru.arr_math:main out
+    scoreboard players operation #lib.expf.2 ckenja.ai_raru /= #2 ckenja.ai_raru
+    scoreboard players operation #lib.expf.3 ckenja.ai_raru /= #6 ckenja.ai_raru
 
-    data modify storage ckenja.ai_raru.arr_math:in var1 set from storage ckenja.ai_raru.__temp__:lib expf.2
-    data modify storage ckenja.ai_raru.arr_math:in var2 set value {dec:0,num:[2],pol:1,base:10}
-    function ckenja.ai_raru.arr_math:call/divide
-    data modify storage ckenja.ai_raru.__temp__:lib expf.2 set from storage ckenja.ai_raru.arr_math:main out
+    scoreboard players set #lib.expf.output ckenja.ai_raru 1
+    scoreboard players operation #lib.expf.output ckenja.ai_raru += #lib.expf.input ckenja.ai_raru
+    scoreboard players operation #lib.expf.output ckenja.ai_raru += #lib.expf.2 ckenja.ai_raru
+    scoreboard players operation #lib.expf.output ckenja.ai_raru += #lib.expf.3 ckenja.ai_raru
 
-    data modify storage ckenja.ai_raru.arr_math:in var1 set value {dec:0,num:[1],pol:1,base:10}
-    data modify storage ckenja.ai_raru.arr_math:in var2 set from storage ckenja.ai_raru:lib expf.input
-    function ckenja.ai_raru.arr_math:call/add
-
-    data modify storage ckenja.ai_raru.arr_math:in var1 set from storage ckenja.ai_raru.__temp__:lib expf.2
-    data modify storage ckenja.ai_raru.arr_math:in var2 set from storage ckenja.ai_raru.arr_math:main out
-    function ckenja.ai_raru.arr_math:call/add
-
-    data modify storage ckenja.ai_raru.arr_math:in var1 set from storage ckenja.ai_raru.__temp__:lib expf.3
-    data modify storage ckenja.ai_raru.arr_math:in var2 set from storage ckenja.ai_raru.arr_math:main out
-    function ckenja.ai_raru.arr_math:call/add
-
-#負なら逆数
-execute if data storage ckenja.ai_raru:lib expf.input{pol:-1} run function ckenja.ai_raru:lib/expf/reciprocal
-
-data modify storage ckenja.ai_raru:lib expf.output set from storage ckenja.ai_raru.arr_math:main out
+#負なら逆数に
+execute if score #lib.expf.success ckenja.ai_raru matches 1 run function ckenja.ai_raru:lib/expf/reciprocal

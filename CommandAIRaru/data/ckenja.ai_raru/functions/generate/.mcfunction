@@ -1,6 +1,6 @@
 #> ckenja.ai_raru:generate/
 #
-# モデルを作成します
+# モデルを作成します。完成してないししばらく作る気にもなれない
 #
 # @input
 #   score
@@ -21,7 +21,6 @@
 #
 # @public
 
-function ckenja.ai_raru.arr_math:reset
 data modify storage ckenja.ai_raru.__temp__:generate model set from storage ckenja.ai_raru:calc input.model
 function ckenja.ai_raru:generate/module/
 

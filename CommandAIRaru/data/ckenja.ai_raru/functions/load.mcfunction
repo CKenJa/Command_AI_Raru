@@ -5,8 +5,8 @@
 # @within tag/function minecraft:load
 
 scoreboard objectives add ckenja.ai_raru dummy
-function ckenja.ai_raru.arr_math:setup
-scoreboard players set #3072 ckenja.ai_raru 3072
+scoreboard players set #20480 ckenja.ai_raru 20480
+scoreboard players set #-1 ckenja.ai_raru -1
 
-scoreboard players set #const.shift.multiply objective 32768
-scoreboard players set #const.shift.division objective 32768
+scoreboard players set #const.shift.multiply ckenja.ai_raru 10000
+scoreboard players set #const.shift.division ckenja.ai_raru 10000

@@ -10,5 +10,5 @@
 
 #> const
 #@public
-    #declare objective #const.shift.multiply
-    #declare objective #const.shift.division
+    #declare score_holder #const.shift.multiply ckenja.ai_raru
+    #declare score_holder #const.shift.division ckenja.ai_raru

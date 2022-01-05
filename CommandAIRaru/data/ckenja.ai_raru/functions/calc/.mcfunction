@@ -17,7 +17,6 @@
 
 scoreboard players set #test ckenja.ai_raru 0
 
-#function ckenja.ai_raru.arr_math:reset
 #最初のレイヤーの引数にこの関数の引数をそのまま
 data modify storage ckenja.ai_raru.__temp__:calc/layer input set from storage ckenja.ai_raru:calc input.matrix
 
