@@ -6,9 +6,10 @@
 #
 # @public
 
-data modify storage ckenja.ai_raru.math: in set value [8,16]
+data modify storage ckenja.ai_raru.math: in set value [10,1000]
 function #ckenja.ai_raru.math:dice
-#乱数の最大値が2くらいになるように。理由は勘
-execute store result score #lib.gauss_rnd ckenja.ai_raru run data get storage ckenja.ai_raru.math: out.sum 320
-#(乱数の最大値/2)*320=、平均を0にする
-scoreboard players operation #lib.gauss_rnd ckenja.ai_raru -= #20480 ckenja.ai_raru
+
+#乱数の最大値を1に
+execute store result score #lib.gauss_rnd ckenja.ai_raru run data get storage ckenja.ai_raru.math: out.sum 2
+#平均を0にする
+scoreboard players operation #lib.gauss_rnd ckenja.ai_raru -= #10000 ckenja.ai_raru
