@@ -1,2 +1,0 @@
-execute store result storage ckenja.ai_raru.arr_math:main temp int 1 run scoreboard players get temp= ckenja.ai_raru.arr_math.main
-data modify storage ckenja.ai_raru.arr_math:main out.num prepend from storage ckenja.ai_raru.arr_math:main temp

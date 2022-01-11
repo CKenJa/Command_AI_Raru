@@ -2,10 +2,10 @@
 #
 # Heの初期値を生成します
 #
-# @input score #lib.he ckenja.ai_raru
+# @input score #lib.he.input ckenja.ai_raru
 #   ノードの数
 #
-# @output storage arr_math:main out
+# @output score #lib.he.output ckenja.ai_raru
 #   生成した乱数(1個だけ)
 #
 # @public
@@ -14,23 +14,14 @@
 function ckenja.ai_raru:lib/gauss_rnd/
 
 #X=√(2/n)*Zで確率変数Xに従う分散が2/nの正規分布が得られる
-data modify storage ckenja.ai_raru.arr_math:in var1 set value {dec:0,num:[2],pol:1,base:10}
-execute store result storage ckenja.ai_raru.arr_math:in var2 double 1 run scoreboard players get #lib.he ckenja.ai_raru
-function ckenja.ai_raru.arr_math:call/divide
+scoreboard players operation #lib.he.output ckenja.ai_raru = #2 ckenja.ai_raru
+scoreboard players operation #lib.he.output ckenja.ai_raru /= #lib.he.input ckenja.ai_raru
 
-data modify storage ckenja.ai_raru.arr_math:in var1 set from storage ckenja.ai_raru.arr_math:main out
-function ckenja.ai_raru.arr_math:call/convert/flatten
-
-data modify storage ckenja.ai_raru.math: in set from storage ckenja.ai_raru.arr_math:main out
+#1/#const.scale
+execute store result storage ckenja.ai_raru.math: in double 0.0001 run scoreboard players get #lib.he.output ckenja.ai_raru
 function #ckenja.ai_raru.math:sqrt
 
-execute store result score in= ckenja.ai_raru.arr_math.main run data get storage ckenja.ai_raru.math: out 10000
-function ckenja.ai_raru.arr_math:call/scoreboard/import
+#const.scale
+execute store result score #lib.he.output ckenja.ai_raru run data get storage ckenja.ai_raru.math: out 10000
 
-data modify storage ckenja.ai_raru.arr_math:in var1 set from storage ckenja.ai_raru.arr_math:main out
-data modify storage ckenja.ai_raru.arr_math:in var2 set value {dec:0,num:[1,0,0,0,0],pol:1,base:10}
-function ckenja.ai_raru.arr_math:call/divide
-
-data modify storage ckenja.ai_raru.arr_math:in var1 set from storage ckenja.ai_raru.arr_math:main out
-data modify storage ckenja.ai_raru.arr_math:in var2 set from storage ckenja.ai_raru.lib: gauss_rnd
-function ckenja.ai_raru.arr_math:call/multiply
+scoreboard players operation #lib.he.output ckenja.ai_raru *= #lib.gauss_rnd ckenja.ai_raru
