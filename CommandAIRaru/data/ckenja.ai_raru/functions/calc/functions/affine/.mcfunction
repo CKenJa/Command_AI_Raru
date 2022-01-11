@@ -1,4 +1,4 @@
-#> ckenja.ai_raru:calc/functions/affine
+#> ckenja.ai_raru:calc/functions/affine/
 #
 #
 #

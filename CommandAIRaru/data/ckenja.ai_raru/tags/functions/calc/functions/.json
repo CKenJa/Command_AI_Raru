@@ -1,7 +1,7 @@
 {
     "replace": false,
     "values": [
-        "ckenja.ai_raru:calc/functions/affine",
+        "ckenja.ai_raru:calc/functions/affine/",
         "ckenja.ai_raru:calc/functions/relu"
     ]
 }
