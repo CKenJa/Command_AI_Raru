@@ -13,7 +13,7 @@
 #
 # @public
 
-#say calc
+say calc
 
 scoreboard players set #test ckenja.ai_raru 0
 
