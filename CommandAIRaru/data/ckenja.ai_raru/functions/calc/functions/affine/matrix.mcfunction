@@ -1,4 +1,4 @@
-#> ckenja.ai_raru:calc/functions/matrix/
+#> ckenja.ai_raru:calc/functions/affine/matrix
 #
 #行列の積ループ
 #
@@ -33,4 +33,4 @@
     data remove storage ckenja.ai_raru.__temp__:calc model.module[-1].layer[-1].node[-1].affine.weight[-1]
     data remove storage ckenja.ai_raru.__temp__:calc/node matrix[-1]
 
-    execute if data storage ckenja.ai_raru.__temp__:calc model.module[-1].layer[-1].node[-1].affine.weight[-1] run function ckenja.ai_raru:calc/functions/matrix/
+    execute if data storage ckenja.ai_raru.__temp__:calc model.module[-1].layer[-1].node[-1].affine.weight[-1] run function ckenja.ai_raru:calc/functions/affine/matrix
