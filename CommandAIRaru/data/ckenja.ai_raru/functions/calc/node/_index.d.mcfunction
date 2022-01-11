@@ -7,5 +7,5 @@
 #> storage
 #@within function
 #   ckenja.ai_raru:calc/node/**
-#   ckenja.ai_raru:calc/matrix/**
+#   ckenja.ai_raru:calc/functions/matrix/**
     #declare storage ckenja.ai_raru.__temp__:calc/node
