@@ -17,10 +17,11 @@ function ckenja.ai_raru:lib/gauss_rnd/
 scoreboard players operation #lib.he.output ckenja.ai_raru = #2 ckenja.ai_raru
 scoreboard players operation #lib.he.output ckenja.ai_raru /= #lib.he.input ckenja.ai_raru
 
-#1/#const.shift.multiply
+#1/#const.scale
 execute store result storage ckenja.ai_raru.math: in double 0.0001 run scoreboard players get #lib.he.output ckenja.ai_raru
 function #ckenja.ai_raru.math:sqrt
 
+#const.scale
 execute store result score #lib.he.output ckenja.ai_raru run data get storage ckenja.ai_raru.math: out 10000
 
 scoreboard players operation #lib.he.output ckenja.ai_raru *= #lib.gauss_rnd ckenja.ai_raru

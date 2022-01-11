@@ -14,7 +14,7 @@
     tellraw @a {"score":{"name":"#calc.matrix.weight","objective":"ckenja.ai_raru"}}
 
     scoreboard players operation #calc.matrix.input ckenja.ai_raru *= #calc.matrix.weight ckenja.ai_raru
-    scoreboard players operation #calc.matrix.input ckenja.ai_raru /= #const.shift.multiply ckenja.ai_raru
+    scoreboard players operation #calc.matrix.input ckenja.ai_raru /= #const.scale ckenja.ai_raru
 
     say =
     tellraw @a {"score":{"name":"#calc.matrix.input","objective":"ckenja.ai_raru"}}
