@@ -21,7 +21,7 @@
 #
 # @public
 
-data modify storage ckenja.ai_raru.__temp__:generate model set from storage ckenja.ai_raru:calc input.model
+data modify storage ckenja.ai_raru.__temp__:generate model set from storage ckenja.ai_raru:predict input.model
 function ckenja.ai_raru:generate/module/
 
 

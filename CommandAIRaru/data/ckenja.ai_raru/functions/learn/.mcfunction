@@ -7,13 +7,25 @@
 #       モデル
 #   storage ckenja.ai_raru:learn input.training
 #       訓練データセット
-#   storage ckenja.ai_raru:learn input.validation
-#       検証データセット
 #   storage ckenja.ai_raru:learn input.test
 #       テストデータセット
 #
 # @output
 #   storage ckenja.ai_raru:learn output.model
-#   storage ckenja.ai_raru:learn output.log[-1]
+#   storage ckenja.ai_raru:learn output.log
 #
 # @public
+
+#ループ前提じゃないので、ラッパーを実装すること
+
+#ランダムな教師データを選んで予測させる
+data modify storage ckenja.ai_raru:predict input.model set from storage ckenja.ai_raru:learn input.model
+function ckenja.ai_raru:predict/
+
+#誤差を計算
+
+function ckenja.ai_raru:learn/loss/
+
+#勾配を求めて更新
+
+function ckenja.ai_raru:learn/gradient/
