@@ -1,4 +1,4 @@
-#> ckenja.ai_raru:learn/loss/
+#> ckenja.ai_raru:learn/loss/_
 #
 #誤差を計算します
 #

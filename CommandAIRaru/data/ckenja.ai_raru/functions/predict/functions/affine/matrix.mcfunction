@@ -2,7 +2,7 @@
 #
 #行列の積ループ
 #
-# @within function ckenja.ai_raru:predict/layer/
+# @within function ckenja.ai_raru:predict/layer/_
 
 #計算
     execute store result score #predict.matrix.input ckenja.ai_raru run data get storage ckenja.ai_raru.__temp__:predict/node matrix[-1]

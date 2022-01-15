@@ -1,4 +1,4 @@
-#> ckenja.ai_raru:lib/expf/
+#> ckenja.ai_raru:lib/expf/_
 #
 # 自然指数関数
 #

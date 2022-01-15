@@ -1,7 +1,7 @@
 ### Copyright © 2021 赤石愛
 ### This software is released under the MIT License, see LICENSE.
 
-#> ckenja.ai_raru.math:sqrt/
+#> ckenja.ai_raru.math:sqrt/_
 # 平方根を求めます。入力は 0.00000001 から 100000000 まで。結果は有効数字4桁です。
 ## 入力: 実数(double) => storage ckenja.ai_raru.math: in
 ## 出力: 平方根(double) => storage ckenja.ai_raru.math: out

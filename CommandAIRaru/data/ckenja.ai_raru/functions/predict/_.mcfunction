@@ -1,4 +1,4 @@
-#> ckenja.ai_raru:predict/
+#> ckenja.ai_raru:predict/_
 #
 # 単純にモデルを実行する
 # 1tickで全処理が終わらないとバグる
@@ -23,7 +23,7 @@ data modify storage ckenja.ai_raru.__temp__:predict/layer input set from storage
 #使い捨てモデルを消しながらループを回す
 data modify storage ckenja.ai_raru.__temp__:predict model set from storage ckenja.ai_raru:predict input.model
 
-function ckenja.ai_raru:predict/module/
+function ckenja.ai_raru:predict/module/_
 data modify storage ckenja.ai_raru:predict output.matrix set from storage ckenja.ai_raru.__temp__:predict/layer input
 
 #TODO:outputをdoubleにするなら、誤差が出ると困るから最後にintから変換する

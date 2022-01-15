@@ -1,4 +1,4 @@
-#> ckenja.ai_raru:lib/gauss_rnd/
+#> ckenja.ai_raru:lib/gauss_rnd/_
 #
 # AiMathのsqrtとdiceから平均0、分散1、値域-1~1の正規分布に従う乱数を作ります。厳密ではない
 #
@@ -7,7 +7,7 @@
 # @public
 
 #速度は求められないし割と適当でいいと思うのでその場のノリで決めた定数と中心極限定理による近似で行います
-#https://kumpei.ikuta.me/benchmark-normal-variates/
+#https://kumpei.ikuta.me/benchmark-normal-variates/_
 
 #const.scale/12の値に近くて二進数的にシンプルな値=512+256+64=832
 data modify storage ckenja.ai_raru.math: in set value [12,832]

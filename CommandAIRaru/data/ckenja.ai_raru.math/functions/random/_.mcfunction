@@ -1,7 +1,7 @@
 ### Copyright © 2021 赤石愛
 ### This software is released under the MIT License, see LICENSE.
 
-#> ckenja.ai_raru.math:random/
+#> ckenja.ai_raru.math:random/_
 # 0 から 2147483647 までの乱数を生成します。
 ## 入力: なし
 ## 出力: 乱数 => storage ckenja.ai_raru.math: out

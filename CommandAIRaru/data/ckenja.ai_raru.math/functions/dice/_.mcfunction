@@ -1,7 +1,7 @@
 ### Copyright © 2021 赤石愛
 ### This software is released under the MIT License, see LICENSE.
 
-#> ckenja.ai_raru.math:dice/
+#> ckenja.ai_raru.math:dice/_
 # サイコロを振った結果を返します。ダイスは1024面くらいまで推奨です。
 ## 入力: NdX(N個のX面ダイス) => storage ckenja.ai_raru.math: in:[N,X]
 ## 出力: 出目と合計値 => storage ckenja.ai_raru.math: out:{dice:[出目1,出目2,...],sum:合計値}

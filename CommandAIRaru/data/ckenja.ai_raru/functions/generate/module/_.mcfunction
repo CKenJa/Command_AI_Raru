@@ -1,4 +1,4 @@
-#> ckenja.ai_raru:generate/module/
+#> ckenja.ai_raru:generate/module/_
 #
 #
 #
