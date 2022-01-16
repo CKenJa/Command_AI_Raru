@@ -25,4 +25,4 @@ function ckenja.ai_raru:predict/_
 function ckenja.ai_raru:learn/loss/_
 
 #勾配を求めて更新
-function #ckenja.ai_raru:learn/gradient
+function ckenja.ai_raru:learn/gradient/_

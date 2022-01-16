@@ -1,7 +1,0 @@
-{
-    "replace": false,
-    "values": [
-        "ckenja.ai_raru:predict/functions/affine/_",
-        "ckenja.ai_raru:predict/functions/relu"
-    ]
-}
