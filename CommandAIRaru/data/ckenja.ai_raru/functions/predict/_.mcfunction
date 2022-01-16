@@ -1,15 +1,16 @@
 #> ckenja.ai_raru:predict/_
 #
-# 単純にモデルを実行する
-# 1tickで全処理が終わらないとバグる
+# モデルを使って予測させます
+# 1tickで全処理が終わらないとバグりそう
 #
 # @input
-#   storage ckenja.ai_raru:predict input.model
-#       重みとかデータぶち込んだモデル
-#   storage ckenja.ai_raru:predict input.matrix
-#       タスクのデータ
+#   storage ckenja.ai_raru:predict __input__
+#       model
+#           重みとかデータぶち込んだモデル
+#       matrix
+#           予測させたいデータ
 #
-# @output storage ckenja.ai_raru:predict output.matrix
+# @output storage ckenja.ai_raru:predict __output__.matrix
 #
 # @public
 
@@ -18,12 +19,12 @@ say predict
 scoreboard players set #test ckenja.ai_raru 0
 
 #最初のレイヤーの引数にこの関数の引数をそのまま
-data modify storage ckenja.ai_raru.__temp__:predict/layer input set from storage ckenja.ai_raru:predict input.matrix
+data modify storage ckenja.ai_raru.__temp__:predict/layer __input__.matrix set from storage ckenja.ai_raru:predict __input__.matrix
 
 #使い捨てモデルを消しながらループを回す
-data modify storage ckenja.ai_raru.__temp__:predict model set from storage ckenja.ai_raru:predict input.model
+data modify storage ckenja.ai_raru.__temp__:predict model set from storage ckenja.ai_raru:predict __input__.model
 
 function ckenja.ai_raru:predict/module/_
-data modify storage ckenja.ai_raru:predict output.matrix set from storage ckenja.ai_raru.__temp__:predict/layer input
+data modify storage ckenja.ai_raru:predict __output__.matrix set from storage ckenja.ai_raru.__temp__:predict/layer __output__.matrix
 
 #TODO:outputをdoubleにするなら、誤差が出ると困るから最後にintから変換する

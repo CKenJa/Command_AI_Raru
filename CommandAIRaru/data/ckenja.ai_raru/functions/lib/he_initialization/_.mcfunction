@@ -3,7 +3,7 @@
 # Heの初期値を生成します
 #
 # @input score #lib.he.input ckenja.ai_raru
-#   ノードの数。int型
+#   その層のノードの数。int型
 #
 # @output score #lib.he.output ckenja.ai_raru
 #   生成した乱数(1個だけ)

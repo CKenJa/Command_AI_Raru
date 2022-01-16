@@ -6,11 +6,11 @@
 
 say layer
 
+data remove storage ckenja.ai_raru.__temp__:predict/layer __output__
 function ckenja.ai_raru:predict/node/_
 
 #このレイヤーの結果を次のレイヤーの引数に。最初のレイヤーの引数はニューラルネットワークの引数そのまま
-data modify storage ckenja.ai_raru.__temp__:predict/layer input set from storage ckenja.ai_raru.__temp__:predict/layer output
-data remove storage ckenja.ai_raru.__temp__:predict/layer output
+data modify storage ckenja.ai_raru.__temp__:predict/layer __input__.matrix set from storage ckenja.ai_raru.__temp__:predict/layer __output__
 
 #ループ
 data remove storage ckenja.ai_raru.__temp__:predict model.module[-1].layer[-1]

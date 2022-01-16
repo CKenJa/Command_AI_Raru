@@ -3,22 +3,26 @@
 # モデルを学習させるよ
 #
 # @input
-#   storage ckenja.ai_raru:learn input.matrix
-#       入力
-#   storage ckenja.ai_raru:learn input.answer
-#       入力に対する答え
-#   storage ckenja.ai_raru:learn input.model
-#       モデル
+#   storage ckenja.ai_raru:learn __input__
+#       matrix
+#           入力
+#       answer
+#           入力に対する答え
+#       model
+#           モデル
 #
 # @output
-#   storage ckenja.ai_raru:learn output.model
-#   storage ckenja.ai_raru:learn output.log
+#   storage ckenja.ai_raru:learn __output__
+#       model
+#           訓練したモデル
+#       log[-1]
+#           今tickのログ
 #
 # @public
 
 #ランダムな教師データを選んで予測させる
-data modify storage ckenja.ai_raru:predict input.model set from storage ckenja.ai_raru:learn input.model
-data modify storage ckenja.ai_raru:predict input.matirx set from storage ckenja.ai_raru:learn input.matrix
+data modify storage ckenja.ai_raru:predict __input__.model set from storage ckenja.ai_raru:learn __input__.model
+data modify storage ckenja.ai_raru:predict __input__.matirx set from storage ckenja.ai_raru:learn __input__.matrix
 function ckenja.ai_raru:predict/_
 
 #誤差を計算
