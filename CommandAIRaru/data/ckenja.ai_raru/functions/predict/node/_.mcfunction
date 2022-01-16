@@ -9,7 +9,7 @@ say node
 data modify storage ckenja.ai_raru.__temp__:predict/node matrix set from storage ckenja.ai_raru.__temp__:predict/layer input
 scoreboard players add #test ckenja.ai_raru 1
 
-function #ckenja.ai_raru:predict/functions/_
+function #ckenja.ai_raru:predict/functions
 
 #アウトプットにぶち込めー
 #ここはappendでもinisertでも統一されていれば問題ない
