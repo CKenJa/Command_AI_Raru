@@ -1,9 +1,9 @@
 {
     "replace": false,
     "values": [
-        "ckenja.ai_raru:predict/function/affine/_",
-        "ckenja.ai_raru:predict/function/relu",
-        "ckenja.ai_raru:predict/function/sum_squadred_loss/node",
-        "ckenja.ai_raru:predict/function/cross_entropy_loss/node"
+        "ckenja.ai_raru:function/affine/_",
+        "ckenja.ai_raru:function/relu",
+        "ckenja.ai_raru:function/sum_squadred_loss/node",
+        "ckenja.ai_raru:function/cross_entropy_loss/node"
     ]
 }
