@@ -22,7 +22,7 @@
 # @public
 
 data modify storage ckenja.ai_raru.__temp__:generate model set from storage ckenja.ai_raru:generate __input__.model
-function ckenja.ai_raru:generate/module/_
+#function ckenja.ai_raru:generate/neural_network/module/_
 
 
 #重みの数は、前ノードの数で決める。最初の重みの数は#generate.inputより

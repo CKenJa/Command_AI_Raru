@@ -1,4 +1,4 @@
-#> ckenja.ai_raru:learn/wrapper
+#> ckenja.ai_raru:wrapper/learn/wrapper
 #
 #毎tick前提の学習関数。スケジュールtick使用。
 #
@@ -19,5 +19,7 @@
 #           学習ログ
 #
 # @public
+
+function ckenja.ai_raru:wrapper/learn/_
 
 schedule function ckenja.ai_raru:learn/wrapper 1t replace
