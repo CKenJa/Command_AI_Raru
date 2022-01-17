@@ -6,20 +6,13 @@
 
 #> neural_network
 #@within function
-#   ckenja.ai_raru:neural_network/*
-#   ckenja.ai_raru:function/*
+#   ckenja.ai_raru:neural_network/**
+#   ckenja.ai_raru:function/**
+#   ckenja.ai_raru:wrapper/**
     #declare storage ckenja.ai_raru.__temp__:neural_network/
-    #declare storage ckenja.ai_raru.__temp__:neural_network/layer
 
-#> node
-#@within ckenja.ai_raru:neural_network/node
-    #declare storage ckenja.ai_raru.__temp__:neural_network/node
 
-#> node
-#@public
-    #declare storage ckenja.ai_raru:neural_network/node
-
-#> score
+#> ノード内変数
 #@within function
 #   ckenja.ai_raru:function/**
 #   ckenja.ai_raru:neural_network/node

@@ -10,6 +10,8 @@
 #           入力に対する答え
 #       model
 #           モデル
+#       config
+#           設定
 #
 # @output
 #   storage ckenja.ai_raru:learn __output__
@@ -21,9 +23,11 @@
 # @public
 
 #ランダムな教師データを選んで予測させて誤差を求める
-data modify storage ckenja.ai_raru:predict __input__.model set from storage ckenja.ai_raru:learn __input__.model
-data modify storage ckenja.ai_raru:predict __input__.matirx set from storage ckenja.ai_raru:learn __input__.matrix
-function ckenja.ai_raru:predict/_
+data modify storage ckenja.ai_raru.__temp__:predict __input__.model set from storage ckenja.ai_raru:learn __input__.model
+data modify storage ckenja.ai_raru.__temp__:predict __input__.matirx set from storage ckenja.ai_raru:learn __input__.matrix
+function ckenja.ai_raru.__temp__:predict/_
 
 #逆伝播で勾配を求めつつ値を更新
 function ckenja.ai_raru:learn/gradient/_
+
+data remove storage ckenja.ai_raru.__temp__:learn __input__.config

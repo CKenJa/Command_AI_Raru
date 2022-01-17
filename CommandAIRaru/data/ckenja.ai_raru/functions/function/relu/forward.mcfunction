@@ -2,6 +2,6 @@
 #
 #
 #
-# @within tag/function ckenja.ai_raru:function/node
+# @within tag/function ckenja.ai_raru:neural_network/node/_
 
 execute if data storage ckenja.ai_raru.__temp__:neural_network model.module[-1].activation{id:"relu"} unless score #node.output ckenja.ai_raru matches 1.. run scoreboard players set #node.output ckenja.ai_raru 0

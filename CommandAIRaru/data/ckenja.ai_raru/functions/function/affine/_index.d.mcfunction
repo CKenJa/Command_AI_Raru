@@ -5,6 +5,6 @@
 # @private
 
 #> score
-#@within ckenja.ai_raru:function/affine/**
+#@within function ckenja.ai_raru:function/affine/**
     #declare score_holder #affine.sum
     #declare score_holder #affine.input

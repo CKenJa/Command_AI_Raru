@@ -20,6 +20,8 @@
 #
 # @public
 
+#todo: 非常停止ボタンを押さなくても数時間で自然に止まるように
+
 function ckenja.ai_raru:wrapper/learn/_
 
 schedule function ckenja.ai_raru:learn/wrapper 1t replace

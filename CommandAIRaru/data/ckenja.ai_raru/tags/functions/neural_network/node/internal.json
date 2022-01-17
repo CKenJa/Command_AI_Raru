@@ -1,0 +1,8 @@
+{
+    "replace": false,
+    "values": [
+        "#ckenja.ai_raru:neural_network/node/pre",
+        "#ckenja.ai_raru:neural_network/node/_",
+        "#ckenja.ai_raru:neural_network/node/post"
+    ]
+}
