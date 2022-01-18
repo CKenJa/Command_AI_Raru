@@ -1,6 +1,6 @@
 {
     "replace": false,
     "values": [
-        "ckenja.ai_raru.__temp__:predict/_"
+        "ckenja.ai_raru:wrapper/predict/_"
     ]
 }
