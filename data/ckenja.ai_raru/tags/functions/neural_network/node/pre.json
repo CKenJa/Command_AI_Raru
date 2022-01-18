@@ -1,6 +1,7 @@
 {
     "replace": false,
     "values": [
-        "ckenja.ai_raru:function/forward/node.pre"
+        "ckenja.ai_raru:function/forward/node.pre",
+        "ckenja.ai_raru:function/list_reverse/node"
     ]
 }
