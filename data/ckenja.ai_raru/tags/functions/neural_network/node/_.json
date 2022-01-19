@@ -3,6 +3,7 @@
     "values": [
         "ckenja.ai_raru:function/affine/forward/_",
         "ckenja.ai_raru:function/relu/forward",
+        "ckenja.ai_raru:function/leaky_relu/forward",
         "ckenja.ai_raru:function/sum_squadred_error/node",
         "ckenja.ai_raru:function/cross_entropy_error/node"
     ]
