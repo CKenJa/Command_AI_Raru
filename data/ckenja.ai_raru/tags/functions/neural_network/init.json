@@ -1,6 +1,6 @@
 {
     "replace": false,
     "values": [
-        "ckenja.ai_raru:function/model_reverse/init"
+        "ckenja.ai_raru:callback/model_reverse/init"
     ]
 }

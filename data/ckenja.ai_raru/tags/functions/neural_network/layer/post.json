@@ -1,7 +1,7 @@
 {
     "replace": false,
     "values": [
-        "ckenja.ai_raru:function/forward/layer.post",
-        "ckenja.ai_raru:function/sum_squadred_error/post"
+        "ckenja.ai_raru:callback/forward/layer.post",
+        "ckenja.ai_raru:callback/sum_squadred_error/post"
     ]
 }

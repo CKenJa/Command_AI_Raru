@@ -22,7 +22,7 @@ scoreboard players set #20000 ckenja.ai_raru 20000
 
 #>leaky relu用
 # 1/(0.01*const.scale)
-#@within function ckenja.ai_raru:function/leaky_relu
+#@within function ckenja.ai_raru:callback/leaky_relu
 scoreboard players set #100 ckenja.ai_raru 100
 
 scoreboard players set #const.scale ckenja.ai_raru 10000

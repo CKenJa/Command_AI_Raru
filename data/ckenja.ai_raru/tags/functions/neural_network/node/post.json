@@ -1,6 +1,6 @@
 {
     "replace": false,
     "values": [
-        "ckenja.ai_raru:function/forward/node.post"
+        "ckenja.ai_raru:callback/forward/node.post"
     ]
 }
