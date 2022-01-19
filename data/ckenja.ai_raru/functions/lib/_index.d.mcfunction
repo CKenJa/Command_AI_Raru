@@ -4,7 +4,6 @@
 #
 # @public
 
-#> storage
+#> つかってないstorage
 # @public
-#declare storage ckenja.ai_raru:lib
-#declare storage ckenja.ai_raru.__temp__:lib
+    #declare storage ckenja.ai_raru.__temp__:lib
