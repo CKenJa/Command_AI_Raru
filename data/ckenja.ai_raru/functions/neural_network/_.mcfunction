@@ -11,6 +11,6 @@
 #
 # @public
 
-#この関数にもpre postがあってもいいけど、いまのところ各ラッパーに書けばよくね?という
-function ckenja.ai_raru:neural_network/module
+function #ckenja.ai_raru:neural_network/internal
 data remove storage ckenja.ai_raru.__temp__:neural_network config
+data remove storage ckenja.ai_raru.__temp__:neural_network model

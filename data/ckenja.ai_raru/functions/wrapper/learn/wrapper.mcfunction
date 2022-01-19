@@ -3,7 +3,7 @@
 #毎tick前提の学習関数。スケジュールtick使用。
 #
 # @input
-#   storage ckenja.ai_raru:learn.wrapper __input__
+#   storage ckenja.ai_raru.__temp__:learn.wrapper __input__
 #       model
 #           モデル
 #       training
@@ -12,7 +12,7 @@
 #           テストデータセット
 #
 # @output
-#   storage ckenja.ai_raru:learn __output__
+#   storage ckenja.ai_raru.__temp__:learn __output__
 #       model
 #           訓練したモデル
 #       log
@@ -24,4 +24,4 @@
 
 function ckenja.ai_raru:wrapper/learn/_
 
-schedule function ckenja.ai_raru:learn/wrapper 1t replace
+schedule function ckenja.ai_raru.__temp__:learn/wrapper 1t replace

@@ -2,7 +2,7 @@
 #
 #モジュールループ
 #
-# @within function ckenja.ai_raru:neural_network/-
+# @within tag/function ckenja.ai_raru:neural_network/internal
 
 say module
 
