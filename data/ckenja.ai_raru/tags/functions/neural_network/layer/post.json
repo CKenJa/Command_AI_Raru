@@ -2,7 +2,6 @@
     "replace": false,
     "values": [
         "ckenja.ai_raru:function/forward/layer.post",
-        "ckenja.ai_raru:function/cross_entropy_loss/final",
-        "ckenja.ai_raru:function/sum_squadred_loss/final"
+        "ckenja.ai_raru:function/sum_squadred_error/post"
     ]
 }

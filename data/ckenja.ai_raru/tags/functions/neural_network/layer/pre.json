@@ -2,6 +2,7 @@
     "replace": false,
     "values": [
         "ckenja.ai_raru:function/forward/layer.pre",
-        "ckenja.ai_raru:function/model_reverse/layer"
+        "ckenja.ai_raru:function/model_reverse/layer",
+        "ckenja.ai_raru:function/sum_squadred_error/pre"
     ]
 }

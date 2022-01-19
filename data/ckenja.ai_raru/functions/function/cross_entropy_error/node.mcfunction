@@ -1,4 +1,4 @@
-#> ckenja.ai_raru:function/cross_entropy_loss/node
+#> ckenja.ai_raru:function/cross_entropy_error/node
 #
 #
 #
