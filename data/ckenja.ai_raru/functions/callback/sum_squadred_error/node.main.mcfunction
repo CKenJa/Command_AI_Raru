@@ -11,7 +11,7 @@
 execute store result score #squadred_error ckenja.ai_raru run data get storage ckenja.ai_raru.__temp__:sum_squadred_error matrix[-1]
 scoreboard players operation #squadred_error ckenja.ai_raru -= #node.output ckenja.ai_raru
 scoreboard players operation #squadred_error ckenja.ai_raru *= #squadred_error ckenja.ai_raru
-scoreboard players operation #squadred_error ckenja.ai_raru /= #const.scale ckenja.ai_raru
+scoreboard players operation #squadred_error ckenja.ai_raru /= #20000 ckenja.ai_raru
 scoreboard players operation #sum_squadred_error ckenja.ai_raru += #squadred_error ckenja.ai_raru
 data remove storage ckenja.ai_raru.__temp__:sum_squadred_error matrix[-1]
 
