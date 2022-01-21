@@ -25,7 +25,7 @@
 # ランダムな教師データを選んで予測させて誤差を求める
     data modify storage ckenja.ai_raru.__temp__:predict __input__.model set from storage ckenja.ai_raru.__temp__:learn __input__.model
     data modify storage ckenja.ai_raru.__temp__:predict __input__.matirx set from storage ckenja.ai_raru.__temp__:learn __input__.matrix
-    # 順伝搬しながら逆伝搬用のリストを作成する天才的発想
+    # 順伝搬しながら逆伝搬用の逆転リストを作成する天才的発想
         data modify storage ckenja.ai_raru.__temp__:neural_network config.model_reverse set value true
     function ckenja.ai_raru:wrapper/predict/_
 
