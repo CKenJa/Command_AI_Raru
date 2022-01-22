@@ -18,7 +18,7 @@ say predict
 #ckenja.ai_raru:callback/forwardへの引数。最初のレイヤーの引数はモデルの引数に
 data modify storage ckenja.ai_raru.__temp__:neural_network/layer input.matrix set from storage ckenja.ai_raru.__temp__:predict __input__.matrix
 
-#ckenja.ai_raru:neural_networkへの引数
+#ckenja.ai_raru:neural_network/forwardへの引数
 data modify storage ckenja.ai_raru.__temp__:neural_network config.propagation set value "forward"
 data modify storage ckenja.ai_raru.__temp__:neural_network model set from storage ckenja.ai_raru.__temp__:predict __input__.model
 

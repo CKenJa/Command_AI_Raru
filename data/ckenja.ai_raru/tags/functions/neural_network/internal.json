@@ -1,8 +1,0 @@
-{
-    "replace": false,
-    "values": [
-        "#ckenja.ai_raru:neural_network/init",
-        "ckenja.ai_raru:neural_network/module",
-        "#ckenja.ai_raru:neural_network/exit"
-    ]
-}

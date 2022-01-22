@@ -11,6 +11,8 @@
 #
 # @public
 
-function #ckenja.ai_raru:neural_network/internal
+execute if data storage ckenja.ai_raru.__temp__:neural_network config{propagation:"forward"} run function #ckenja.ai_raru:neural_network/forward/internal
+execute if data storage ckenja.ai_raru.__temp__:neural_network config{propagation:"backward"} run function #ckenja.ai_raru:neural_network/backward/internal
+
 data remove storage ckenja.ai_raru.__temp__:neural_network config
 data remove storage ckenja.ai_raru.__temp__:neural_network model

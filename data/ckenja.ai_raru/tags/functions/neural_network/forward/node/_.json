@@ -1,0 +1,8 @@
+{
+    "replace": false,
+    "values": [
+        "ckenja.ai_raru:callback/affine/forward/_",
+        "#ckenja.ai_raru:callback/activation",
+        "#ckenja.ai_raru:callback/error_function"
+    ]
+}

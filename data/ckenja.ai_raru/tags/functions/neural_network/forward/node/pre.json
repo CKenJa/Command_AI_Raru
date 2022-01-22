@@ -1,0 +1,7 @@
+{
+    "replace": false,
+    "values": [
+        "ckenja.ai_raru:callback/forward/node.pre",
+        "ckenja.ai_raru:callback/model_reverse/node"
+    ]
+}
